@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> task 10 implimenting all css selecter </title>
+    <style>
+        /* selecting with name  */
+        body{            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1{
+            color: greenyellow;
+        }
+        /* universal selector  */
+        *{
+            background-color: #252839;
+            text-align: center;
+            font-size: 3vw;
+        }            
+        /* class selector  */
+        .style_class{
+            color: aqua;
+        }
+        /* Id selector */
+        #style_Id{
+            color: blue;
+        }
+        /* group selector with animation  */
+        h5,h6{
+            -webkit-text-fill-color: whitesmoke;
+            background-image: linear-gradient(45deg,red,green,blue,aqua,skyblue,yellow);
+            animation: animation 5s ease-in-out infinite;
+            line-height: 0.9;
+            background-size: 300%;
+        }
+        @keyframes animation {
+        0%{
+            background-position: 0 50%;
+        }
+        
+        50%{
+            background-position: 100% 50%;
+        }
+        
+        100%{
+            background-position: 0 50%;
+        }
+        
+      }
+      
+    </style>
+</head>
+<body>
+    <h1><u>Infinix laptop </u></h1>
+    <h2 class="style_class">Its have 15.6 inch display</h2>
+    <h3 class="style_class">it comes with 8 gb ram and 512 ssd </h3>
+    <h4 id="style_Id">Its have backlight keybord </h4>
+    <h5>It comes with dual flash light</h5>
+    <h6>good laptop</h6>
+</body>
+</html>
