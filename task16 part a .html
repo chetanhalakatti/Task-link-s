@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task16</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .manu_bar{
+            background-color:rgb(29, 57, 58) ;
+            color: rgb(45, 98, 119);
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            list-style-type: none;
+            padding: 16px;
+        }
+        li{
+            float: left;
+            padding: 14px;
+            display: block;
+            color: white;
+            text-align: center;
+
+        }
+        a:hover{
+            background-color: rgb(30, 79, 79);
+        }
+        ul{
+            display: block;
+            overflow: hidden;
+        }
+        /* vertical-menu */
+        ul.vertical-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            height: 300px;
+            background-color: rgb(29, 57, 58);
+        }
+
+        ul.vertical-menu li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        ul.vertical-menu li a:hover {
+            background-color:rgb(30, 79, 79);
+        }
+        .navbar {
+             overflow: hidden;
+             background-color:rgb(29, 57, 58);
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:rgb(45, 101, 103);
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: rgb(45, 101, 103);
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color:rgb(45, 101, 103);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="manu_bar">
+            <ul class="manu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">back</a></li>
+                <li><a href="#">contect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br>
+    <ul class="vertical-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <br><hr>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+          </div>
+        </div> 
+      </div>
+</body>
+</html>
